@@ -1,5 +1,5 @@
 const express = require('express');
-const AuthorModel= require('../functions/models/author');
+const AuthorModel= require('../models/author');
 const { get } = require('mongoose');
 
 const router = express.Router();

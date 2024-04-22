@@ -5,12 +5,15 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
+const cloudDB = 'mongodb+srv://tolinelvin:elvintolin20@elvin20.uj50pg3.mongodb.net/?retryWrites=true&w=majority&appName=Elvin20';
+const localDB = 'mongodb://localhost:27017/ServerlessAPI/TolinAPI';
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 mongoose
-  .connect(process.env.cloudDB || process.env.localDB)
+  .connect(cloudDB || localDB)
   .then(()=> console.log('Connected to MongoDB'))
   .catch((error)=>console.error('Failed to connect to MongoDB'));
 

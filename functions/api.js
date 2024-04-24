@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 
 const cloudDB = 'mongodb+srv://tolinelvin:elvintolin20@elvin20.uj50pg3.mongodb.net/?retryWrites=true&w=majority&appName=Elvin20';
-const localDB = 'mongodb://localhost:27017/ServerlessAPI/TolinAPI';
+const localDB = 'mongodb+srv://tolinelvin:elvintolin20@elvin20.uj50pg3.mongodb.net/?retryWrites=true&w=majority&appName=Elvin20';
 
 app.use(cors());
 app.use(express.json());

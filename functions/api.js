@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-const cloudDB = 'mongodb+srv://tolinelvin:elvintolin20@elvin20.uj50pg3.mongodb.net/?retryWrites=true&w=majority&appName=Elvin20';
-const localDB = 'mongodb+srv://tolinelvin:elvintolin20@elvin20.uj50pg3.mongodb.net/?retryWrites=true&w=majority&appName=Elvin20';
+const cloudDB = 'mongodb+srv://tolinvin:O4HhHtQ4U3VDJPT@cluster1.wnwzcvq.mongodb.net/?retryWrites=true&w=majority&appName=Cluste';
+const localDB = 'mongodb://localhost:27017/serverless-api';
 
 app.use(cors());
 app.use(express.json());
